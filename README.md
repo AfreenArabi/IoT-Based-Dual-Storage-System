@@ -41,7 +41,7 @@ The ESP32 collects and processes the sensor data. The measured values are compar
 
 Through Wi-Fi connectivity, the monitored data is uploaded to ThingSpeak Cloud. The same storage information can also be accessed through the mobile application.
 
-The system architecture and block diagram are provided separately in the project repository under the `Diagrams` folder.
+The system architecture and block diagram are provided separately in the `Diagrams` folder.
 
 ## Storage Sections
 
@@ -80,6 +80,8 @@ The ESP32 performs sensor data acquisition, data processing, threshold compariso
 - Mobile Application
 
 The Arduino IDE is used for programming the ESP32 and integrating the required libraries for Wi-Fi, ThingSpeak, DHT sensors, and LCD communication. It is also used for debugging and checking sensor readings through the Serial Monitor.
+
+The ESP32 source codes for the long-duration and short-duration crop storage sections are available in the `Arduino_Code` folder.
 
 ## Working Methodology
 
@@ -128,7 +130,7 @@ The experimental results include:
 - ThingSpeak cloud graphs
 - Mobile application monitoring outputs
 
-The project includes ThingSpeak results for **Onion, Potato, Tomato, and Mirchi**, along with separate mobile interfaces for the crops.
+The project includes ThingSpeak results for **Onion, Potato, Tomato, and Mirchi**, along with separate mobile monitoring interfaces for the crops.
 
 ## Experimental Setup
 
@@ -140,7 +142,7 @@ The experimental setup images are available in the `Hardware_Setup` folder.
 
 The 16×2 LCD provides real-time local monitoring of the storage parameters.
 
-The LCD outputs include normal storage conditions and alert conditions such as:
+The LCD output images include normal storage conditions and alert conditions such as:
 
 - Temperature Alert
 - Humidity Alert
