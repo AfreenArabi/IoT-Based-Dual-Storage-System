@@ -2,18 +2,18 @@
 
 ## Project Overview
 
-The IoT-Based Dual Storage System for Efficient Post-Harvest Management is designed to monitor and manage storage conditions for agricultural crops using IoT technology.
+The **IoT-Based Dual Storage System for Efficient Post-Harvest Management** is designed to monitor and manage storage conditions for agricultural crops using IoT technology.
 
 The system consists of two independent storage sections:
 
-- Long-Duration Crops: Onion and Potato
-- Short-Duration Crops: Tomato and Mirchi
+- **Long-Duration Crops:** Onion and Potato
+- **Short-Duration Crops:** Tomato and Mirchi
 
 An ESP32-based monitoring system continuously collects environmental parameters such as temperature, humidity, CO, CH₄, and light conditions. The measured values are compared with predefined threshold limits.
 
 When abnormal conditions are detected, the system activates the exhaust fan and buzzer to maintain suitable storage conditions and provide alerts.
 
-The storage conditions can be monitored locally through a 16×2 LCD, remotely through ThingSpeak Cloud, and through a mobile application. The system is powered using a solar panel with rechargeable battery backup.
+The storage conditions can be monitored locally through a **16×2 LCD**, remotely through **ThingSpeak Cloud**, and through a **mobile application**. The system is powered using a solar panel with rechargeable battery backup.
 
 ## Objectives
 
@@ -41,16 +41,16 @@ The ESP32 collects and processes the sensor data. The measured values are compar
 
 Through Wi-Fi connectivity, the monitored data is uploaded to ThingSpeak Cloud. The same storage information can also be accessed through the mobile application.
 
-The system architecture and block diagram are provided separately in the project images.
+The system architecture and block diagram are provided separately in the project repository under the `Diagrams` folder.
 
-### Storage Sections
+## Storage Sections
 
-#### Long-Duration Storage
+### Long-Duration Storage
 
 - Onion
 - Potato
 
-#### Short-Duration Storage
+### Short-Duration Storage
 
 - Tomato
 - Mirchi
@@ -69,7 +69,7 @@ The system architecture and block diagram are provided separately in the project
 - Rechargeable Lithium-Ion Battery
 - Connecting Wires
 
-The ESP32 performs sensor data acquisition, data processing, threshold comparison, actuator control, LCD display, and Wi-Fi communication. :contentReference[oaicite:1]{index=1}
+The ESP32 performs sensor data acquisition, data processing, threshold comparison, actuator control, LCD display, and Wi-Fi communication.
 
 ## Software and Cloud Platform
 
@@ -79,7 +79,7 @@ The ESP32 performs sensor data acquisition, data processing, threshold compariso
 - ThingSpeak Cloud
 - Mobile Application
 
-The Arduino IDE is used for programming the ESP32 and integrating the required libraries for Wi-Fi, ThingSpeak, DHT sensors, and LCD communication. It is also used for debugging and checking sensor readings through the Serial Monitor. :contentReference[oaicite:2]{index=2}
+The Arduino IDE is used for programming the ESP32 and integrating the required libraries for Wi-Fi, ThingSpeak, DHT sensors, and LCD communication. It is also used for debugging and checking sensor readings through the Serial Monitor.
 
 ## Working Methodology
 
@@ -128,21 +128,32 @@ The experimental results include:
 - ThingSpeak cloud graphs
 - Mobile application monitoring outputs
 
-The project includes ThingSpeak results for Onion, Potato, Tomato, and Mirchi, along with separate mobile interfaces for long-duration and short-duration crops. :contentReference[oaicite:3]{index=3}
+The project includes ThingSpeak results for **Onion, Potato, Tomato, and Mirchi**, along with separate mobile interfaces for the crops.
 
-### Experimental Setup
+## Experimental Setup
 
 The hardware setup demonstrates the integration of the ESP32, sensors, LCD, exhaust fan, buzzer, and power supply for crop storage monitoring.
 
-The experimental setup images are provided separately in the project repository.
+The experimental setup images are available in the `Hardware_Setup` folder.
 
-### LCD Monitoring Results
+## LCD Monitoring Results
 
 The 16×2 LCD provides real-time local monitoring of the storage parameters.
 
-The LCD outputs and alert conditions are provided separately in the project images.
+The LCD outputs include normal storage conditions and alert conditions such as:
 
-### ThingSpeak Results
+- Temperature Alert
+- Humidity Alert
+- Carbon Monoxide Alert
+- Methane Alert
+- Onion Storage Conditions
+- Potato Storage Conditions
+- Tomato Storage Conditions
+- Mirchi Storage Conditions
+
+The LCD result images are available in the `LCD_Results` folder.
+
+## ThingSpeak Results
 
 ThingSpeak Cloud is used to visualize the monitored sensor data through graphical representations.
 
@@ -153,16 +164,26 @@ The project includes cloud graphs for:
 - Tomato Storage
 - Mirchi Storage
 
-### Mobile Application Results
+The ThingSpeak result images are available in the `ThingSpeak_Results` folder.
+
+## Mobile Application Results
 
 The mobile application provides remote access to the monitored storage information.
 
 The project includes mobile monitoring interfaces for:
 
-- Long-Duration Crops
-- Short-Duration Crops
+- Onion
+- Potato
+- Tomato
+- Mirchi
 
-The LCD, ThingSpeak Cloud, and mobile application represent the same monitored storage conditions through different interfaces: local display, cloud-based visualization, and remote mobile monitoring.
+The mobile application result images are available in the `Mobile_Application_Results` folder.
+
+The LCD, ThingSpeak Cloud, and mobile application represent the same monitored storage conditions through different interfaces:
+
+- **LCD:** Local monitoring
+- **ThingSpeak:** Cloud-based monitoring and graphical visualization
+- **Mobile Application:** Remote monitoring
 
 ## Advantages
 
@@ -188,10 +209,12 @@ The LCD, ThingSpeak Cloud, and mobile application represent the same monitored s
 
 ## Conclusion
 
-The IoT-Based Dual Storage System provides continuous monitoring and automated management of storage conditions for long-duration and short-duration crops.
+The **IoT-Based Dual Storage System for Efficient Post-Harvest Management** provides continuous monitoring and automated management of storage conditions for long-duration and short-duration crops.
 
 The ESP32 processes sensor data, compares environmental conditions with predefined limits, and controls the exhaust fan and buzzer when required.
 
-The system provides local monitoring through the LCD and remote monitoring through ThingSpeak Cloud and the mobile application.
+The system provides local monitoring through the **16×2 LCD** and remote monitoring through **ThingSpeak Cloud** and the **mobile application**.
 
 The integration of IoT monitoring, automated control, cloud connectivity, mobile monitoring, and solar-powered operation provides an effective approach for improving crop storage management and reducing post-harvest losses.
+
+Overall, the proposed system demonstrates how IoT-based sensing, automatic control, cloud monitoring, and mobile technology can be integrated to support reliable and efficient post-harvest crop storage.
